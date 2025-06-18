@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lucida Handwriting', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33, 32, 105);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/titulo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 10%;
+    z-index: 1;
+}
+a, button{
+    color: aqua;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 1%;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    main .header {
+      margin-bottom: 70px !important;
+    }
+}
+
+h1, span{
+    color: #FFF;
+    font-family:'Lucida Handwriting', cursive;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h3{
+    color: rgb(254, 254, 254);
+    margin-top: 26%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card-logo{
+    width: 37px;
+    height: 33px;   
+    flex-shrink: 0;
+    border-radius: 37px;
+    background: url(imagens/logo.jpg)lightgray -2.516px -6.332px / 113.962% 138.639% no-repeat;
+}
+.card-elenco, .card-historia{
+    width: 368px;
+    height: 148px;
+    flex-shrink: 0;
+    border-radius: 69px;
+    border: 1px solid;
+    border-color: aliceblue;
+    opacity: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
+.card-elenco{
+    background: url(imagens/elenco.jpg)lightgray -5px 0.68px / 100% 143.675% no-repeat;
+}
+.card-historia{
+    background: url(imagens/historia.png)lightgray 0px -48.306px / 100% 142.305% no-repeat;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 100px;
+    position: relative;
+    opacity:48%;
+}
+@media screen and (max-width: 600px) {
+    img {
+        height: 300px; /* Reduza a altura para telas menores */
+        width: 100%; /* Mantenha a largura em 100% */
+    }
+}
+
+.owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .owl-nav {
+      top: -60px !important;
+    }
+}
+
+.owl-nav button {
+   
+    width: 45px;
+    height: 45px;
+    font-size: 25px !important;
+    box-shadow: 0px 0px 17px #00000005;
+    border-radius: 50%;
+    opacity: 0;
+}
+.owl-nav button:nth-of-type(1) {
+    margin-right: 13px;
+}
+
+
